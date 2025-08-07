@@ -8,10 +8,10 @@
 다가오는 것들 
 
 // CALL me Ishmael. Some years ago never mind how 
-이스마엘이라고 불러주세요. 몇 년 전만 해도 어떻게 했는지 신경 쓰지 마세요 
+이스마엘이라고 불러주세요. 몇 년 전만 해도 어떻게 했는지 신경 쓰지 마세요
 
 // long precisely having little or no money in my purse, 
-오랫동안 내 지갑에 돈이 거의 없거나 전혀 없는 상태였습니다,
+오랫동안 내 지갑에 돈이 거의 없거나 전혀 없는 상태였습니다, 
 
 // and nothing particular to interest me on shore, I thought 
 해안에서 특별히 흥미를 끌 만한 것은 없다고 생각했습니다 

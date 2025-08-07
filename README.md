@@ -13,49 +13,60 @@ npm install github:shinich39/node-transl
 ### Usage
 
 ```js
-import { translate } from "node-transl";
+import { Transl } from "node-transl";
 
-const result = await translate({
-  // headless: false, // debug
-  // cacheDir, // default ".puppeteer"
-  type: "google",
-  text: `
-The baby was lying on her back.
-A blue bird flew in through the window.
-The blue bird had blue eyes.
-  `.trim(),
-  from: "en",
-  to: "ko",
-  size: 1024, // optional
-  minDelay: 512, // optional
-  maxDelay: 1024, // optional
-  onQueue: (line, index, lines) => {
+try {
+  // const text = fs.readFileSync('test/mobydick.txt', 'utf8');
+  const text = `
+  The baby was lying on her back.
+  A blue bird flew in through the window.
+  The blue bird had blue eyes.
+  `.trim();
+
+  const from = "en";
+  const to = "ko";
+
+  const type = "google";
+  // const type = "papago";
+  // const type = "deepl";
+  // const type = "yandex";
+  // const type = "reverso";
+
+  const t = new Tranl();
+  // t.headless = false;
+  t.minDelay = 512;
+  t.maxDelay = 1536;
+  t.translateSize = 1024;
+
+  t.onQueue = (line, index, lines) => {
     console.log(`onQueue()`, index, !!line.trim(), line);
-
-    // you can skip translation of this line
     return !!line.trim();
-  },
-  onTranslate: (oldValue, newValue, index) => {
-    // if the line skipped, newValue is undefined
-    const isTranslated = !!newValue;
+  }
 
-    console.log(`onTranslate()`, index, isTranslated, oldValue, newValue);
+  t.onTranslate = (oldValue, newValue, index) => {
+    console.log(`onTranslate()`, index, !!newValue, oldValue, newValue);
+    return newValue || oldValue;
+  }
 
-    // re-formatting translated value
-    return newValue;
-  },
-  onError: (value, index) => {
+  t.onError = (value, index) => {
     console.log(`onError()`, value, index);
-
-    // re-formatting error occurred line value
     return `ERROR: ${value}`;
-  },
-});
+  }
 
-console.log(result);
-// 아기가 등을 대고 누워있었습니다.
-// 푸른 새가 창문을 통해 날아 갔다.
-// 푸른 새는 파란 눈을 가졌습니다.
+  const result = await t.translate({
+    type,
+    text,
+    from,
+    to,
+  });
+
+  console.log("result", result);
+  // fs.writeFileSync(`test/translated-mobydick-${type}-${to}.txt`, result, 'utf8');
+
+  await t.close();
+} catch(err) {
+  console.error(err);
+}
 ```
 
 ## Acknowledgements

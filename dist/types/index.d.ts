@@ -1,3 +1,4 @@
+import { Browser } from "puppeteer";
 declare const providers: {
     readonly deepl: import("./types/provider.js").IProvider;
     readonly google: import("./types/provider.js").IProvider;
@@ -5,31 +6,30 @@ declare const providers: {
     readonly reverso: import("./types/provider.js").IProvider;
     readonly yandex: import("./types/provider.js").IProvider;
 };
-export declare function translate({ headless, cacheDir, type, text, from, to, size, minDelay, maxDelay, onQueue, onTranslate, onError, }: {
-    headless?: boolean;
+export declare class Tranl {
+    isOpened: boolean;
+    browser: Browser | null;
+    headless: boolean;
+    cacheDir: string;
+    translateSize: number;
+    minDelay: number;
+    maxDelay: number;
     /**
-     * @default ".puppeteer"
+     * @return {boolean} false: skip translation
      */
-    cacheDir?: string;
-    type: keyof typeof providers;
-    text: string;
-    from: string;
-    to: string;
-    /**
-     * @default 1024
-     */
-    size?: number;
-    /**
-     * @default 512
-     */
-    minDelay?: number;
-    /**
-     * @default 1024
-     */
-    maxDelay?: number;
     onQueue?: (value: string, index: number, lines: string[]) => boolean;
     onTranslate?: (oldValue: string, newValue: string | undefined, index: number, lines: string[]) => string;
     onError?: (value: string, index: number, lines: string[]) => string;
-}): Promise<string>;
+    constructor();
+    open(): Promise<void>;
+    close(): Promise<void>;
+    wait(): Promise<void>;
+    translate({ type, text, from, to, }: {
+        type: keyof typeof providers;
+        text: string;
+        from: string;
+        to: string;
+    }): Promise<string>;
+}
 export {};
 //# sourceMappingURL=index.d.ts.map

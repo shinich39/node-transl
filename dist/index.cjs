@@ -12732,7 +12732,7 @@ var require_country_language = __commonJS({
 // src/index.ts
 var index_exports = {};
 __export(index_exports, {
-  translate: () => translate
+  Tranl: () => Tranl
 });
 module.exports = __toCommonJS(index_exports);
 
@@ -12922,46 +12922,69 @@ var providers = {
   // bug: if disable headless option, browser closed
   yandex
 };
-async function translate({
-  headless,
-  cacheDir,
-  type,
-  text,
-  from,
-  to,
-  size,
-  minDelay,
-  maxDelay,
-  onQueue,
-  onTranslate,
-  onError
-}) {
-  if (!size) {
-    size = 1024;
+var Tranl = class {
+  isOpened;
+  browser;
+  headless;
+  cacheDir;
+  translateSize;
+  minDelay;
+  maxDelay;
+  /**
+   * @return {boolean} false: skip translation
+   */
+  onQueue;
+  onTranslate;
+  onError;
+  constructor() {
+    this.isOpened = false;
+    this.browser = null;
+    this.headless = true;
+    this.cacheDir = ".puppeteer";
+    this.translateSize = 1024;
+    this.minDelay = 512;
+    this.maxDelay = 1024;
   }
-  if (!minDelay) {
-    minDelay = 512;
+  async open() {
+    if (this.isOpened) {
+      return;
+    }
+    this.isOpened = true;
+    this.browser = await puppeteer.launch({
+      headless: this.headless,
+      defaultViewport: null,
+      args: [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-features=site-per-process"
+      ],
+      userDataDir: this.cacheDir
+      // executablePath: "google-chrome-stable",
+    });
   }
-  if (!maxDelay) {
-    maxDelay = 1024;
+  async close() {
+    if (!this.isOpened) {
+      return;
+    }
+    this.isOpened = false;
+    const b = this.browser;
+    this.browser = null;
+    await b?.close();
   }
-  if (typeof headless !== "boolean") {
-    headless = true;
+  async wait() {
+    await this.open();
+    while (!this.browser) {
+      await wait(256);
+    }
   }
-  if (!cacheDir) {
-    cacheDir = ".puppeteer";
-  }
-  const browser = await puppeteer.launch({
-    headless,
-    args: [
-      "--no-sandbox",
-      "--disable-setuid-sandbox",
-      "--disable-features=site-per-process"
-    ],
-    userDataDir: cacheDir
-    // executablePath: "google-chrome-stable",
-  });
-  try {
+  async translate({
+    type,
+    text,
+    from,
+    to
+  }) {
+    await this.wait();
+    const browser = this.browser;
     const { createUrl, selector, maxLength } = providers[type];
     const queue = [];
     const originalLines = text.split(/\r\n|\r|\n/);
@@ -12971,7 +12994,7 @@ async function translate({
         throw new Error("Line is too long.");
       }
       let isSkipped = false;
-      if (onQueue && !onQueue(line, i2, originalLines)) {
+      if (this.onQueue && !this.onQueue(line, i2, originalLines)) {
         isSkipped = true;
       }
       queue.push({
@@ -12989,7 +13012,7 @@ async function translate({
       while (i < unskippedQueue.length) {
         const q = unskippedQueue[i];
         const qLength = q.value.length;
-        if (processQueueSize + qLength > size) {
+        if (processQueueSize + qLength > this.translateSize) {
           break;
         }
         processQueue.push(q);
@@ -12999,79 +13022,63 @@ async function translate({
       }
       const value = processQueue.map((q) => q.value).join("\n");
       const url = createUrl(value, from, to);
-      let retry = 3;
-      while (true) {
-        const page = await browser.newPage();
-        try {
-          let waitUntil = "networkidle0";
-          switch (type) {
-            case "yandex":
-              waitUntil = "load";
-              break;
-          }
-          await page.goto(url, {
-            waitUntil,
-            timeout: 1e3 * 30
-            // 30s
-          });
-          await waitContent(page, selector, 10);
-          const content = await getContent(page, selector);
-          const translatedLines = content.split(/\r\n|\r|\n/);
-          for (let k = 0; k < translatedLines.length; k++) {
-            const pq = processQueue[k];
-            const oldValue = pq.value;
-            const newValue = translatedLines[k];
-            pq.newValue = newValue;
-          }
-          while (j <= processQueueLastIndex) {
-            const q = queue[j];
-            const index = q.index;
-            const oldValue = q.value;
-            const newValue = q.newValue;
-            const isSkipped = q.isSkipped;
-            const formattedValue = onTranslate?.(oldValue, !isSkipped ? newValue : void 0, index, originalLines) || newValue || oldValue;
-            q.newValue = formattedValue;
-            j++;
-          }
-          await page.close();
-          break;
-        } catch (err) {
-          if (retry < 1) {
-            while (j <= processQueueLastIndex) {
-              const q = queue[j];
-              const index = q.index;
-              const oldValue = q.value;
-              const newValue = q.newValue;
-              const isSkipped = q.isSkipped;
-              if (q.isSkipped) {
-                const formattedValue = onTranslate?.(oldValue, !isSkipped ? newValue : void 0, index, originalLines) || newValue || oldValue;
-                q.newValue = formattedValue;
-              } else {
-                const formattedValue = onError?.(oldValue, index, originalLines) || oldValue;
-                q.newValue = formattedValue;
-              }
-              j++;
-            }
-            await page.close();
+      const page = await browser.newPage();
+      try {
+        let waitUntil = "networkidle0";
+        switch (type) {
+          case "yandex":
+            waitUntil = "load";
             break;
+        }
+        await page.goto(url, {
+          waitUntil,
+          timeout: 1e3 * 30
+          // 30s
+        });
+        await waitContent(page, selector, 10);
+        const content = await getContent(page, selector);
+        const translatedLines = content.split(/\r\n|\r|\n/);
+        for (let k = 0; k < translatedLines.length; k++) {
+          const pq = processQueue[k];
+          const oldValue = pq.value;
+          const newValue = translatedLines[k];
+          pq.newValue = newValue;
+        }
+        while (j <= processQueueLastIndex) {
+          const q = queue[j];
+          const index = q.index;
+          const oldValue = q.value;
+          const newValue = q.newValue;
+          const isSkipped = q.isSkipped;
+          const formattedValue = this.onTranslate?.(oldValue, !isSkipped ? newValue : void 0, index, originalLines) || newValue || oldValue;
+          q.newValue = formattedValue;
+          j++;
+        }
+      } catch (err) {
+        while (j <= processQueueLastIndex) {
+          const q = queue[j];
+          const index = q.index;
+          const oldValue = q.value;
+          const newValue = q.newValue;
+          const isSkipped = q.isSkipped;
+          if (q.isSkipped) {
+            const formattedValue = this.onTranslate?.(oldValue, !isSkipped ? newValue : void 0, index, originalLines) || newValue || oldValue;
+            q.newValue = formattedValue;
           } else {
-            retry--;
-            await page.close();
-            await wait(generateInt(minDelay, maxDelay));
+            const formattedValue = this.onError?.(oldValue, index, originalLines) || oldValue;
+            q.newValue = formattedValue;
           }
+          j++;
         }
       }
-      await wait(generateInt(minDelay, maxDelay));
+      await page.close();
+      await wait(generateInt(this.minDelay, this.maxDelay));
     }
-    await browser.close();
     const result = queue.map((q) => q.newValue).join("\n");
     return result;
-  } catch (err) {
-    await browser.close();
-    throw err;
   }
-}
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  translate
+  Tranl
 });

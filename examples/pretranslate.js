@@ -1,6 +1,6 @@
 import path from "node:path";
 import fs from "node:fs";
-import { translate } from "../dist/index.min.mjs";
+import { Tranl } from "../dist/index.min.mjs";
 
 const toProgress = (index, length) => {
   return (Math.floor((index+1) / length * 100) + "%").padStart(4, " ");
@@ -13,15 +13,17 @@ const formatResult = (result) => {
 }
 
 export async function translateTexts(type, from, to, inputDir, outputDir) {
+  const t = new Tranl();
+  t.minDelay = 512;
+  t.maxDelay = 1536;
+  t.translateSize = 1024;
+
   const inputNames = fs.readdirSync(inputDir);
 
   const options = {
     type,
     from,
     to,
-    minDelay: 512,
-    maxDelay: 1536,
-    size: 1024,
   }
 
   let lineCount = 0, 
@@ -38,45 +40,69 @@ export async function translateTexts(type, from, to, inputDir, outputDir) {
     const inputData = fs.readFileSync(inputPath, "utf8");
     const outputData = exists ? fs.readFileSync(outputPath,  "utf8") : null;
 
+    // create a new translated file
     if (!exists) {
-      const result = await translate({
+
+      t.onQueue = (value, index, lines) => {
+        const isEmpty = !value.trim();
+        const isUrl = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)/.test(value);
+        return !isEmpty && !isUrl;
+      }
+
+      t.onTranslate = (oldValue, newValue, index, lines) => {
+        if (newValue) {
+          console.log(`${progress}; ${toProgress(index, lines.length)}; ${filename}; ${newValue.substring(0,10)}...;`);
+        } else {
+          console.log(`${progress}; ${toProgress(index, lines.length)}; ${filename}; SKIP;`);
+        }
+
+        lineCount++;
+
+        if (newValue) {
+          return `// ${oldValue}\n${newValue}`;
+        } else if (oldValue.trim()) {
+          return `// ${oldValue}\n${oldValue}`;
+        } else {
+          return "";
+        }
+      }
+
+      t.onError = (value, index, lines) => {
+        console.log(`${progress}; ${toProgress(index, lines.length)}; ${filename}; ERROR;`);
+        lineCount++;
+        errorCount++;
+        return `// ${value}\nERROR=${value}`;
+      }
+      
+      const result = await t.translate({
         ...options,
         text: inputData,
         // onQueue?: (line: string, index: number, lines: string[]) => boolean,
         // onTranslate?: (oldValue: string, newValue: string|undefined, index: number) => string,
         // onError?: (value: string, index: number) => string,
-        onQueue: (value, index, lines) => {
-          const isEmpty = !value.trim();
-          const isUrl = /((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-_]*)?\??(?:[-\+=&;%@.\w_]*)#?(?:[\w]*))?)/.test(value);
-          return !isEmpty && !isUrl;
-        },
-        onTranslate: (oldValue, newValue, index, lines) => {
-          if (newValue) {
-            console.log(`${progress};${toProgress(index, lines.length)};${filename};${newValue.substring(0,10)}...`);
-          } else {
-            console.log(`${progress};${toProgress(index, lines.length)};${filename};SKIP`);
-          }
-          lineCount++;
-          if (newValue) {
-            return `// ${oldValue}\n${newValue}`;
-          } else if (oldValue.trim()) {
-            return oldValue;
-          } else {
-            return "";
-          }
-        },
-        onError: (value, index, lines) => {
-          console.log(`${progress};${toProgress(index, lines.length)};${filename};ERROR`);
-          lineCount++;
-          errorCount++;
-          return `// ${value}\nERROR=${value}`;
-        }
       });
 
       const formattedResult = formatResult(result);
 
       fs.writeFileSync(outputPath, formattedResult, "utf8");
-    } else {
+    } // fix translated file
+    else {
+      delete t.onQueue;
+      
+      t.onTranslate = (oldValue, newValue, index, lines) => {
+        if (newValue) {
+          console.log(`${progress}; ${toProgress(index, lines.length)}; ${filename}; ${newValue.substring(0,10)}...;`);
+        } else {
+          console.log(`${progress}; ${toProgress(index, lines.length)}; ${filename}; SKIP;`);
+        }
+        return newValue || oldValue;
+      }
+      
+      t.onError = (value, index, lines) => {
+        console.log(`${progress}; ${toProgress(index, lines.length)}; ${filename}; ERROR;`);
+        return `ERROR=${value}`;
+      }
+
       const translatedLines = outputData.split(/\r\n|\r|\n/);
       const checkedLines = [];
       for (let j = 0; j < translatedLines.length; j++) {
@@ -90,21 +116,9 @@ export async function translateTexts(type, from, to, inputDir, outputDir) {
         }
 
         try {
-          const newLine = await translate({
+          const newLine = await t.translate({
             ...options,
             text: origLine.replace("// ", ""),
-            onTranslate: (oldValue, newValue, index, lines) => {
-              if (newValue) {
-                console.log(`${progress};${toProgress(index, lines.length)};${filename};${newValue.substring(0,10)}...`);
-              } else {
-                console.log(`${progress};${toProgress(index, lines.length)};${filename};SKIP`);
-              }
-              return newValue || oldValue;
-            },
-            onError: (value, index, lines) => {
-              console.log(`${progress};${toProgress(index, lines.length)};${filename};ERROR`);
-              return `ERROR=${value}`;
-            }
           });
 
           checkedLines.push(newLine);
@@ -121,6 +135,8 @@ export async function translateTexts(type, from, to, inputDir, outputDir) {
       fs.writeFileSync(outputPath, formattedResult, "utf8");
     }
 
-    console.log(`${progress};Lines:${lineCount};Errors:${errorCount}`);
+    console.log(`${progress}; Lines:${lineCount}; Errors:${errorCount};`);
+
+    await t.close();
   }
 }
