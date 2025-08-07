@@ -1,0 +1,44 @@
+{
+  "name": "node-transl",
+  "version": "1.0.0",
+  "description": "Text translation via headless browser in nodejs",
+  "keywords": [
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "shinich39 <shinich39@gmail.com>",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.min.mjs",
+      "require": "./dist/index.min.cjs"
+    }
+  },
+  "main": "./dist/index.min.mjs",
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "test": "tsx --test \"**/*.test.{js,jsx,ts,tsx}\"",
+    "build": "npm run lint && node esbuild.config.js && tsc",
+    "lint": "eslint \"src/**/*\""
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@types/ladjs__country-language": "^1.0.0",
+    "@types/node": "^22.14.0",
+    "esbuild": "^0.25.2",
+    "eslint": "^9.24.0",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.0"
+  },
+  "dependencies": {
+    "@ladjs/country-language": "^1.0.3",
+    "cheerio": "^1.1.2",
+    "npm": "^11.5.2",
+    "puppeteer": "^24.16.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}
