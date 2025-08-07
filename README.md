@@ -46,6 +46,8 @@ The blue bird had blue eyes.
   },
   onError: (value, index) => {
     console.log(`onError()`, value, index);
+
+    // re-formatting error occurred line value
     return `ERROR: ${value}`;
   },
 });
