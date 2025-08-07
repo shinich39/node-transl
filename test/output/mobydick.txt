@@ -1,0 +1,722 @@
+// MOBY-DICK 
+모비딕 
+
+// CHAPTER I 
+제1장 
+
+// LOOMINGS 
+다가오는 것들 
+
+// CALL me Ishmael. Some years ago never mind how 
+이스마엘이라고 불러주세요. 몇 년 전만 해도 어떻게 했는지 신경 쓰지 마세요 
+
+// long precisely having little or no money in my purse, 
+오랫동안 내 지갑에 돈이 거의 없거나 전혀 없는 상태였습니다,
+
+// and nothing particular to interest me on shore, I thought 
+해안에서 특별히 흥미를 끌 만한 것은 없다고 생각했습니다 
+
+// I would sail about a little and see the watery part of the 
+저는 조금 항해해서 물이 많은 부분을 보곤 했습니다 
+
+// world. It is a way I have of driving off the spleen, and 
+세상. 그것은 내가 비장에서 몰아내는 방법입니다 
+
+// regulating the circulation. Whenever I find myself 
+순환을 조절하는 것. 내가 나 자신을 발견할 때마다 
+
+// growing grim about the mouth ; whenever it is a damp, 
+입가가 침울해지고; 축축해질 때마다, 
+
+// drizzly November in my soul ; whenever I find myself 
+내 영혼의 이슬비 내리는 11월; 내가 나를 발견할 때마다 
+
+// involuntarily pausing before coffin warehouses, and bring- 
+관 창고 앞에서 무의식적으로 일시 중지하고 다음을 가져옵니다.- 
+
+// ing up the rear of every funeral I meet ; and especially 
+제가 만나는 모든 장례식 뒤에서; 특히 
+
+// whenever my hypos get such an upper hand of me, that 
+내 가설이 나를 압도할 때마다, 그것은 
+
+// it requires a strong moral principle to prevent me from 
+다음을 방지하려면 강력한 도덕적 원칙이 필요합니다 
+
+// deliberately stepping into the street, and methodically 
+의도적으로 거리에 들어서고 체계적으로 
+
+// knocking people's hats off then, I account it high time 
+그러면 사람들의 모자를 벗기는 것이 중요하다고 생각합니다 
+
+// to get to sea as soon as I can. This is my substitute for 
+가능한 한 빨리 바다에 가기 위해. 이것이 제 대체물입니다 
+
+// pistol and ball. With a philosophical flourish Cato throws 
+권총과 공. 철학적으로 번성하는 카토가 던집니다 
+
+// himself upon his sword ; I quietly take to the ship. 
+그의 검에 몸을 담았습니다; 저는 조용히 배로 향합니다. 
+
+// There is nothing surprising in this. If they but knew 
+여기에는 놀라운 것이 없습니다. 그들이 알고 있었다면
+
+// it, almost all men in their degree, some time or other, 
+거의 모든 학위 소지자들, 언젠가는, 
+
+// cherish very nearly the same feelings toward the ocean 
+바다에 대한 거의 같은 감정을 소중히 여기다 
+
+// with me. 
+나랑. 
+
+// There now is your insular city of the Manhattoes, 
+이제 당신의 섬 도시 맨해튼이 있습니다, 
+
+// belted round by wharves as Indian isles by coral reefs 
+산호초로 둘러싸인 인도 섬처럼 소용돌이에 둘러싸여 있습니다 
+
+// commerce surrounds it with her surf. Right and left, the 
+상업은 그녀의 서핑으로 그것을 둘러싸고 있습니다. 좌우로 
+
+// streets take you waterward. Its extreme down -town is the 
+거리는 당신을 물가로 데려다 줍니다. 그 극단적인 다운타운은 
+
+// battery, where that noble mole is washed by waves, and 
+그 고귀한 두더지가 파도에 의해 씻겨지는 배터리, 그리고 
+
+// VOL. I. A 
+제1권 
+
+// 2 MOBY-DICK 
+2 MOBY-DICK 
+
+// cooled by breezes, which a few hours previous were out of 
+몇 시간 전에는 바람에 의해 식어 버렸습니다 
+
+// sight of land. Look at the crowds of water -gazers there. 
+육지의 광경. 저기 물 구경꾼들이 모여 있는 것을 보세요. 
+
+// Circumambulate the city of a dreamy Sabbath after- 
+다음과 같은 꿈 많은 안식일의 도시를 둘러보세요.- 
+
+// noon. Go from Corlears Hook to Coenties Slip, and 
+정오. Corlears Hook에서 Coenties Slip으로 이동합니다 
+
+// from thence, by Whitehall, northward. What do you 
+그때부터 화이트홀을 지나 북쪽으로. 당신은 무엇을 하시겠습니까 
+
+// see ? Posted like silent sentinels all around the town, 
+보세요? 마을 곳곳에 조용한 보초처럼 게시되었습니다, 
+
+// stand thousands upon thousands of mortal men fixed 
+수천 명의 치명적인 인간들이 고정되어 있습니다 
+
+// in ocean reveries. Some leaning against the spiles ; 
+바다의 몽환 속에서. 일부는 기둥에 기대어 있습니다; 
+
+// some seated upon the pier-heads ; some looking over 
+부두 머리 위에 앉아 있는 사람도 있고, 저쪽을 바라보는 사람도 있습니다 
+
+// Vhe bulwarks of ships from China ; some high aloft in 
+중국에서 온 배들의 보루; 높은 곳에 있는 배들 
+
+// the rigging, as if striving to get a still better seaward 
+더 나은 바다로 나아가기 위해 노력하는 것처럼 보이는 장비들
+
+// peep. But these are all landsmen ; of week days pent 
+엿보기. 하지만 이들은 모두 지주들입니다; 주중에는 그렇지 않습니다 
+
+// up in lath and plaster tied to counters, nailed to benches, 
+라스와 석고를 카운터에 묶고 벤치에 못을 박았습니다, 
+
+// clinched to desks. How then is this ? Are the green 
+책상에 손을 잡았습니다. 그렇다면 이게 어떻게 된 건가요? 초록색인가요 
+
+// fields gone ? What do they here ? 
+들판이 사라졌나요? 여기서 무엇을 하나요? 
+
+// But look ! here come more crowds, pacing straight for 
+하지만 보세요! 더 많은 군중이 몰려와서 바로 서성입니다 
+
+// the water, and seemingly bound for a dive. Strange ! 
+물과 다이빙을 앞둔 것 같습니다. 이상하네요! 
+
+// Nothing will content them but the extremest limit of the 
+그들을 만족시킬 수 있는 것은 오직 극한뿐입니다 
+
+// land ; loitering under the shady lee of yonder warehouses 
+땅; 저쪽 창고의 그늘진 이 아래에서 어슬렁거리고 있음 
+
+// will not suffice. No. They must get just as nigh the 
+충분하지 않습니다. 아니요. 그들은 최대한 가까이 다가가야 합니다 
+
+// water as they possibly can without falling in. And there 
+물이 빠지지 않고 가능한 한 물을 제공합니다. 그리고 거기에 
+
+// they stand miles of them leagues. Inlanders all, they 
+그들은 몇 마일의 리그에 서 있습니다. 내륙 주민들 모두, 그들은 
+
+// come from lanes and alleys, streets and avenues north, 
+북쪽의 차선과 골목, 거리와 길에서 옵니다, 
+
+// east, south, and west. Yet here they all unite. Tell me, 
+동쪽, 남쪽, 서쪽. 하지만 여기서는 모두 단결합니다. 말해줘요, 
+
+// does the magnetic virtue of the needles of the compasses 
+나침반 바늘의 자기적 미덕을 수행합니다 
+
+// of all those ships attract them thither ? 
+그 모든 배들 중에서 그들을 거기로 끌어들입니까? 
+
+// Once more. Say, you are in the country ; in some 
+다시 한 번. 예를 들어, 당신은 시골에 있습니다; 어떤 곳에서는 
+
+// high land of lakes. Take almost any path you please, 
+높은 호수의 땅. 원하는 거의 모든 길을 선택하세요, 
+
+// and ten to one it carries you down in a dale, and leaves 
+그리고 그것은 당신을 데일로 이끌고 떠납니다 
+
+// you there by a pool in the stream. There is magic in it. 
+개울가의 수영장 옆에 있습니다. 그 안에는 마법이 있습니다.
+
+// Let the most absent-minded of men be plunged in his 
+가장 무관심한 사람들이 그의 몸에 빠져들게 하소서 
+
+// deepest reveries stand that man on his legs, set his feet 
+가장 깊은 꿈은 그 남자를 다리로 세우고 발을 내딛는 것입니다 
+
+// a-going, and he will infallibly lead you to water, if water 
+물이 있다면 그는 틀림없이 당신을 물로 인도할 것입니다 
+
+// there be in all that region. Should you ever be athirst 
+그 지역에는 모두 있습니다. 혹시 목마름이 생길까요 
+
+// in the great American desert, try this experiment, if your 
+미국의 거대한 사막에서 이 실험을 시도해 보세요, 만약 당신이 
+
+// LOOMINGS 3 
+루밍스 3 
+
+// caravan happen to be supplied with a metaphysical 
+캐러밴에는 형이상학적 요소가 공급됩니다 
+
+// professor. Yes, as everyone knows, meditation andli 
+교수님. 네, 모두 알다시피 명상과 리 
+
+// water are wedded forever. 
+물은 영원히 쐐기를 박습니다. 
+
+// But here is an artist. He desires to paint you the 
+하지만 여기 한 예술가가 있습니다. 그는 당신을 그립니다 
+
+// dreamiest, shadiest, quietest, most enchanting bit of 
+가장 꿈꾸고, 가장 그늘지고, 가장 조용하고, 가장 매혹적인 부분 
+
+// romantic landscape in all the valley of the Saco. What 
+사코 계곡의 낭만적인 풍경. 뭐라고요 
+
+// is the chief element he employs ? There stand his trees, 
+그가 사용하는 주요 요소는 무엇인가요? 저기 그의 나무들이 서 있습니다, 
+
+// each with a hollow trunk, as if a hermit and a crucifix 
+은둔자와 십자가처럼 속이 빈 몸통을 가진 사람들 
+
+// were within ; and here sleeps his meadow, and there sleep 
+그 안에 있었습니다; 그리고 여기서 그의 초원에서 잠을 자고, 저기서 잠을 잡니다 
+
+// his cattle ; and up from yonder cottage goes a sleepy 
+그의 소들; 그리고 저쪽 오두막에서 졸립니다 
+
+// smoke. Deep into distant woodlands winds a mazy way, 
+연기. 먼 숲 속 깊은 곳으로 바람이 미친 듯이 불어옵니다, 
+
+// reaching to overlapping spurs of mountains bathed in 
+겹쳐진 산줄기에 도달하기 
+
+// their hillside blue. But though the picture lies thus 
+그들의 산비탈은 파란색입니다. 하지만 그림은 이렇게 되어 있습니다
+
+// tranced, and though this pine-tree shakes down its sighs 
+무아지경에 빠져 이 소나무는 한숨을 내쉽니다 
+
+// like leaves upon this shepherd's head, yet all were 
+이 목자의 머리에 있는 나뭇잎처럼, 하지만 모든 것이 
+
+// vain, unless the shepherd's eye were fixed upon the 
+헛되이, 목동의 눈이 고정되지 않는 한 
+
+// magic stream before him. Go visit the Prairies in June, 
+마법의 흐름이 그 앞에 펼쳐집니다. 6월에 대초원을 방문하세요, 
+
+// when for scores on scores of miles you wade knee -deep 
+수십 마일의 점수를 받을 때 무릎 깊이까지 걸어갑니다 
+
+// among tiger-lilies what is the one charm wanting ?- 
+호랑이 백합 중에서 원하는 한 가지 매력은 무엇입니까?-? 
+
+// Water there is not a drop of water there ! Were Niagara 
+거기에는 물이 한 방울도 없어요! 나이아가라였더라면 
+
+// but a cataract of sand, would you travel your thousand 
+하지만 모래 백내장, 천 개를 여행하시겠습니까 
+
+// miles to see it ? Why did the poor poet of Tennessee, 
+그것을 보기 위해 몇 마일을 걸었을까요? 테네시의 가난한 시인은 왜 그랬을까요, 
+
+// upon suddenly receiving two handfuls of silver, deliberate 
+갑자기 은 두 줌을 받았을 때, 신중한 태도로 
+
+// whether to buy him a coat, which he sadly needed, or 
+슬프게도 필요했던 코트를 사줄지, 아니면 
+
+// invest his money in a pedestrian trip to Rockaway Beach ? 
+로커웨이 비치로의 도보 여행에 그의 돈을 투자하시겠습니까? 
+
+// Why is almost every robust healthy boy with a robust 
+거의 모든 건장한 건강한 소년이 건장한 이유 
+
+// healthy soul in him, at some time or other crazy to go to 
+그의 건강한 영혼, 언젠가는 갈 수 있는 미친 듯이 
+
+// sea ? Why upon your first voyage as a passenger, did 
+바다? 승객으로서 처음 항해했을 때, 왜 그랬습니까 
+
+// you yourself feel such a mystical vibration, when first ; 
+처음에는 당신 자신도 신비로운 진동을 느낍니다 ; 
+
+// told that you and your ship were now out of sight of ' 
+당신과 당신의 배가 이제 보이지 않는다고 말했습니다 
+
+// land ? Why did the old Persians hold the sea holy ? 
+육지? 고대 페르시아인들은 왜 바다를 신성하게 여겼나요?
+
+// Why did the Greeks give it a separate deity, and own 
+그리스인들은 왜 그것을 별도의 신으로 주고 소유했을까요 
+
+// brother of Jove ? Surely all this is not without meaning. 
+조브의 형제? 이 모든 것이 의미 없는 것은 아닙니다. 
+
+// And still deeper the meaning of that story of Narcissus, 
+그리고 나르시스 이야기의 의미는 더욱 깊어지고 있습니다, 
+
+// who because he could not grasp the tormenting, mild 
+고통스럽고 온화한 것을 이해할 수 없었기 때문에 
+
+// 4 MOBY-DICK 
+4 MOBY-DICK 
+
+// image he saw in the fountain, plunged into it and was 
+그가 분수에서 본 이미지는 그 분수에 빠져들었고 
+
+// drowned. But that same image, we ourselves see in all 
+익사했습니다. 하지만 같은 이미지, 우리는 모든 것에서 우리 자신을 봅니다 
+
+// rivers and oceans. It is the image of the ungraspable 
+강과 바다. 그것은 이해할 수 없는 사람들의 모습입니다 
+
+// phantom of life ; and this is the key to it all. 
+삶의 유령; 그리고 이것이 모든 것의 열쇠입니다. 
+
+// Now, when I say that I am in the habit of going to sea 
+이제 제가 바다에 가는 습관이 있다고 말할 때 
+
+// whenever I begin to grow hazy about the eyes, and begin 
+눈이 흐려지기 시작하고 시작할 때마다 
+
+// to be over conscious of my lungs, I do not mean to have 
+폐를 지나치게 의식하는 것은 의도한 것이 아닙니다 
+
+// it inferred that I ever go to sea as a passenger. For to 
+제가 승객으로서 바다에 간 적이 있다는 것을 추론했습니다 
+
+// go as a passenger you must needs have a purse, and a 
+승객으로서 지갑이 있어야 하며 
+
+// purse is but a rag unless you have something in it. Be- 
+지갑 안에 무언가가 들어 있지 않으면 쓰레기일 뿐입니다. 될 수 있습니다.- 
+
+// sides, passengers get sea-sick grow quarrelsome don't 
+승객들은 바다 sick에 시달리게 됩니다 
+
+// sleep of nights do not enjoy themselves much, as a 
+밤잠은 그다지 즐겁지 않습니다 
+
+// general thing ; no, I never go as a passenger ; nor, 
+일반적인 것; 아니요, 저는 절대 승객으로 가지 않습니다; 또는, 
+
+// though I am something of a salt, do I ever go to sea as a 
+저는 약간 소금기가 있지만 바다에 갈 때가 있을까요
+
+// Commodore, or a Captain, or a Cook. I abandon the 
+제독, 대위, 또는 요리사. 저는 그들을 버립니다 
+
+// glory and distinction of such offices to those who like 
+그러한 직책의 영광과 명성을 좋아하는 사람들에게 바치기 
+
+// them. For my part, I abominate all honourable respect- 
+그들. 저로서는 모든 존경심을 혐오합니다.- 
+
+// able toils, trials, and tribulations of every kind what- 
+모든 종류의 수고, 시련, 고난을 할 수 있는 것은 무엇입니까?- 
+
+// soever. It is quite as much as I can do to take care 
+물론이죠. 제가 할 수 있는 한 최선을 다해 돌보는 것입니다 
+
+// of myself, without taking care of ships, barques, brigs, 
+배, 바크, 브리그를 돌보지 않고 제 자신을, 
+
+// schooners, and what not. And as for going as cook, 
+스쿠너들, 그리고 그렇지 않아요. 그리고 요리사로 일하는 것에 대해서는, 
+
+// though I confess there is considerable glory in that, a 
+그것에는 상당한 영광이 있다고 고백하지만 
+
+// cook being a sort of officer on shipboard yet, somehow, 
+요리사는 선상에서 일종의 장교로서 아직 어떻게든, 
+
+// I never fancied broiling fowls ; though once broiled, 
+저는 닭을 굽는 것을 전혀 좋아하지 않았습니다. 하지만 한 번 구워본 적은 있지만, 
+
+// judiciously buttered, and judgmatically salted and 
+신중하게 버터를 바르고 신중하게 소금에 절인 다음 
+
+// peppered, there is no one who will speak more respect- 
+더 존경할 만한 사람은 없습니다.- 
+
+// fully, not to say reverentially, of a broiled fowl than I 
+저보다 완전히, 경건하게 말할 것도 없이, 구운 닭의 
+
+// will. It is out of the idolatrous do tings of the old 
+의지. 그것은 옛 사람들의 우상숭배적인 행동에서 비롯된 것입니다 
+
+// Egyptians upon broiled ibis and roasted river horse, that 
+구운 이비스와 구운 강마에 대한 이집트인들의 반응은 다음과 같습니다 
+
+// you see the mummies of those creatures in their huge 
+거대한 동물들의 미라를 볼 수 있습니다 
+
+// bake-houses the pyramids. 
+피라미드를 굽습니다. 
+
+// No, when I go to sea, I go as a simple sailor, right 
+아니요, 제가 바다에 갈 때는 단순한 선원으로 가는 거죠, 그렇죠 
+
+// before the mast, plumb down into the forecastle, aloft 
+돛대 앞에서, 포슬에 수직으로, 높이
+
+// there to the royal mast-head. True, they rather order 
+왕실 돛대 머리까지. 사실, 그들은 오히려 명령합니다 
+
+// me about some, and make me jump from spar to spar, 
+저에 대해 말하자면, 스파에서 스파로 뛰어오르게 만듭니다, 
+
+// LOOMINGS 5 
+루밍스 5 
+
+// like a grasshopper in a May meadow. And at first, this 
+마치 5월의 초원에서 메뚜기처럼. 그리고 처음에는, 이것이 
+
+// sort of thing is unpleasant enough. It touches one's 
+어떤 것은 충분히 불쾌합니다. 그것은 사람의 몸에 닿습니다 
+
+// sense of honour, particularly if you come of an old estab- 
+특히 오래된 가문 출신이라면 명예감을 느낄 수 있습니다.- 
+
+// lished family in the land, the Van Rensselaers, or Ran- 
+이 땅의 부유한 가족, 반 렌셀러 가문, 또는 란- 
+
+// dolphs, or Hardicanutes. And more than all, if just 
+돌고래, 또는 하디쿠트. 그리고 무엇보다도, 만약에 
+
+// previous to putting your hand into the tar-pot, you have 
+타르 냄비에 손을 넣기 전에 다음과 같이 할 수 있습니다 
+
+// been lording it as a country schoolmaster, making the 
+컨트리 스쿨 마스터로서 그것을 지배하고 있으며 
+
+// tallest boys stand in awe of you. The transition is a 
+키가 큰 소년들은 당신을 경외심에 느낍니다. 전환점은 
+
+// keen one, I assure you, from a schoolmaster to a sailor, 
+학교장에서 선원까지, 정말로 열정적인 사람입니다, 
+
+// and requires a strong decoction of Seneca and the Stoics 
+세네카와 스토아 학파의 강력한 해독이 필요합니다 
+
+// to enable you to grin and bear it. But even this wears 
+웃고 견딜 수 있게 해줍니다. 하지만 이것조차도 닳습니다 
+
+// off hi time. 
+안녕하세요. 
+
+// What of it, if some old hunks of a sea-captain orders 
+바다 선장의 오래된 사람들이 주문하면 어떻게 될까요 
+
+// me to get a broom and sweep down the decks ? What 
+빗자루를 가져와서 데크를 쓸까요? 뭐라고요 
+
+// does that indignity amount to, weighed, I mean, in the 
+그 분노가 무게를 재는 것과 같습니까, 제 말은 
+
+// scales of the New Testament ? Do you think the arch- 
+신약 성경의 음계? 아치가 있다고 생각하십니까?- 
+
+// angel Gabriel thinks anything the less of me, because I 
+천사 가브리엘은 저를 무엇이든 덜 생각합니다. 왜냐하면 저는
+
+// promptly and respectfully obey that old hunks in that 
+그 늙은 사람들에게 신속하고 정중하게 복종하는 것은 
+
+// particular instance ? Who ain/t a slave ? Tell me that. 
+특별한 경우? 누가 노예인가요? 말해주세요. 
+
+// Well, then, however the~old^sea -captains may order me 
+음, 그러면, 아무리 오래된^바다 선장이 나를 주문할지도 몰라요 
+
+// about however they may thump and punch me about, 
+그들이 나를 때리고 때릴 수도 있습니다, 
+
+// I have the satisfaction of knowing that it is all right ; 
+괜찮다는 것을 알게 되어 만족스럽습니다; 
+
+// that everybody else is one way or other served in much the 
+다른 모든 사람들이 어떤 식으로든 많은 것에 봉사한다는 것은 
+
+// same way either in a physical or metaphysical point of 
+물리적 또는 형이상학적 관점에서 동일한 방식으로 
+
+// view, that is ; and so the universal thump is passed 
+즉, 보편적인 쿵쿵거림이 전달됩니다 
+
+// round, and all hands should rub each other's shoulder- 
+둥글게 둥글게 하고 모든 손이 서로 어깨를 문지르도록 해야 합니다.- 
+
+// blades, and be content. 
+칼날, 그리고 만족하세요. 
+
+// Again, I always go to sea as a sailor, because they make 
+다시 말하지만, 저는 항상 선원으로서 바다에 갑니다. 왜냐하면 그들은 다음과 같은 일을 하기 때문입니다 
+
+// a point of paying me for my trouble, whereas they never 
+그들은 결코 내 수고에 대한 대가를 치르게 하지 않습니다 
+
+// pay passengers a single penny that I ever heard of. On 
+제가 들어본 적이 없는 승객들에게 단 한 푼의 돈을 지불합니다 
+
+// the contrary, passengers themselves must pay. And 
+반대로 승객 스스로 비용을 지불해야 합니다. 그리고 
+
+// there is all the difference in the world between paying 
+지불하는 것과 지불하는 것 사이에는 모든 차이가 있습니다 
+
+// and being paid. The act of paying is perhaps the most 
+그리고 돈을 받고 있습니다. 돈을 지불하는 행위가 아마도 가장 많을 것입니다 
+
+// uncomfortable infliction that the two orchard thieves 
+두 과수원 도둑이 가한 불편한 고통 
+
+// entailed upon us. But being paid, what will compare 
+우리에게 수반되었습니다. 하지만 돈을 받으면 무엇이 비교될까요 
+
+// 6 MOBY-DICK 
+6 MOBY-DICK 
+
+// with it ? The urbane activity with which a man receives 
+그것과 함께? 남자가 받는 도시적인 활동
+
+// money is really marvellous, considering that we so 
+돈은 정말 놀랍습니다. 우리가 그렇게 생각하기 때문입니다 
+
+// earnestly believe money to be the root of all earthly ills, 
+돈이 모든 지상 질병의 근원이라고 진심으로 믿습니다, 
+
+// and that on no account can a monied man enter heaven. 
+그리고 결코 돈을 가진 사람이 천국에 갈 수 없다는 것입니다. 
+
+// Ah ! how cheerfully we consign ourselves to perdition ! 
+아! 우리는 얼마나 유쾌하게 변태에 빠져들었는지 모릅니다! 
+
+// Finally, I always go to sea as a sailor, because of the 
+마지막으로, 저는 항상 선원으로서 바다에 갑니다. 그 이유는 다음과 같습니다 
+
+// wholesome exercise and pure air of the forecastle deck. 
+건전한 운동과 포슬 데크의 깨끗한 공기. 
+
+// For as in this world, head-winds are far more prevalent 
+이 세상에서와 마찬가지로 역풍이 훨씬 더 흔합니다 
+
+// than winds from astern (that is, if you never violate 
+강한 바람보다 (즉, 위반하지 않는 경우) 
+
+// the Pythagorean maxim), so for the most part the com- 
+피타고라스 격언), 따라서 대부분의 경우 com- 
+
+// modore on the quarter-deck gets his atmosphere at 
+쿼터 deck의 모더가 분위기를 조성합니다 
+
+// second hand from the sailors on the forecastle. He thinks 
+포슬에 있는 선원들의 중고품입니다. 그는 생각합니다 
+
+// he breathes it first ; but not so. In much the same 
+그가 먼저 숨을 쉽니다; 하지만 그렇지는 않습니다. 거의 같은 방식으로 
+
+// way do the commonalty lead their leaders in many other 
+공동체가 다른 많은 분야에서 리더를 이끄는 방법 
+
+// things, at the same time that the leaders little suspect it. 
+리더들이 거의 의심하지 않는 것들. 
+
+// But wherefore it was that after having repeatedly smelt 
+하지만 그래서 반복적으로 냄새를 맡은 후에는 
+
+// the sea as a merchant sailor, I should now take it into 
+상인 선원으로서 바다를 이제 시작해야겠습니다 
+
+// my head to go on a whaling voyage ; this the invisible 
+고래잡이 항해를 떠나고 싶은 내 머리; 이것은 보이지 않는 것들입니다 
+
+// police-officer of the Fates, who has the constant surveil- 
+지속적인 감시를 받고 있는 운명의 경찰관-
+
+// lance of me, and secretly dogs me, and influences me in 
+나의 창, 몰래 나를 개로 키우고 나에게 영향을 미칩니다 
+
+// some unaccountable way he can better answer than any 
+그가 가장 잘 대답할 수 있는 설명할 수 없는 방법 
+
+// one else. And, doubtless, my going on this whaling 
+또 하나. 그리고 의심할 여지 없이, 나는 이 고래잡이를 계속하고 있습니다 
+
+// voyage formed part of the grand programme of Provi- 
+항해는 프로비의 대규모 프로그램의 일부였습니다.- 
+
+// dence that was drawn up a long time ago. It came in 
+오래 전에 작성된 춤. 그것이 들어왔습니다 
+
+// as a sort of brief interlude and solo between more exten- 
+더 넓은 범위 사이에서 일종의 짧은 막간과 솔로로- 
+
+// sive performances. I take it that this part of the bill 
+시브 퍼포먼스. 저는 이 부분이 청구서에 포함된다고 생각합니다 
+
+// must have run something like this : 
+이런 식으로 실행했을 것입니다: 
+
+// ' Grand Contested Election for the Presidency of the 
+' 대통령 선거 대선거 
+
+// United States. 
+미국. 
+
+// ' WHALING VOYAGE BY ONE ISHMAEL. 
+' 이스마엘의 고래잡이 항해. 
+
+// 1 BLOODY BATTLE IN AFGHANISTAN.' 
+아프가니스탄에서 벌어진 1차 유혈 전투 
+
+// Though I cannot tell why it was exactly that those 
+그 이유를 정확히 알 수는 없지만 
+
+// stage managers, the Fates, put me down for this shabby 
+무대 감독들, 운명아, 이 초라한 상황 때문에 저를 실망시켰습니다 
+
+// LOOMINGS 7 
+루밍스 7 
+
+// part of a whaling voyage, when others were set down 
+고래잡이 항해의 일환으로 다른 사람들이 정착했을 때 
+
+// for magnificent parts in high tragedies, and short and easy 
+높은 비극에서 훌륭한 부분과 짧고 쉬운 부분을 위해 
+
+// parts in genteel comedies, and jolly parts in farces 
+젠틀 코미디의 일부와 희극의 유쾌한 일부 
+
+// though I cannot tell why this was exactly ; yet, now that 
+왜 그런지 정확히 알 수는 없지만; 하지만 이제는 
+
+// I recall all the circumstances, I think I can see a little 
+모든 상황을 기억합니다. 조금은 볼 수 있을 것 같습니다 
+
+// into the springs and motives which, being cunningly 
+교묘하게 영감과 동기를 불어넣기 위해
+
+// presented to me under various disguises, induced me to 
+다양한 변장을 하고 저에게 다음과 같이 유도했습니다 
+
+// set about performing the part I did, besides cajoling me 
+제가 한 역할을 수행하기 시작했는데, 저를 조롱하는 것 외에도 
+
+// into the delusion that it was a choice resulting from my 
+그것이 나의 선택에서 비롯된 것이라는 착각 속으로 
+
+// own unbiased freewill and discriminating judgment. 
+자신의 편견 없는 자유 의지와 차별적인 판단. 
+
+// Chief among these motives was the overwhelming idea 
+이러한 동기 중 가장 큰 요인은 압도적인 아이디어였습니다 
+
+// of the great whale himself. Such a gortentous and 
+위대한 고래 자신에 대해. 정말 대담하고 
+
+// mysterious monster roused all my curiosity. Then the 
+신비한 괴물이 내 모든 호기심을 불러일으켰습니다. 그때 
+
+// wild and distant seas where he rolled his island bulk ; 
+그가 섬의 부피를 굴렸던 광활하고 먼 바다; 
+
+// the undeliverable, nameless perils of the whale ; these, 
+고래의 전달할 수 없는 이름 없는 위험; 이것들, 
+
+// with all the attending marvels of a thousand Patagonian 
+천 명의 파타고니아인들이 참석한 모든 경이로움 속에서 
+
+// sights and sounds, helped to sway me to my wish. With 
+시각과 소리, 제 소원을 들어주는 데 도움이 되었습니다. 함께 
+
+// other men, perhaps, such things would not have been 
+다른 남성들은 아마도 그런 일이 없었을 것입니다 
+
+// inducements ; but as for me, I am tormented with an 
+유인물; 하지만 저는 다음과 같은 이유로 고통받고 있습니다 
+
+// everlasting itch for things remote. I love to sail for- 
+먼 곳에 대한 끊임없는 갈망. 저는 항해하는 것을 좋아합니다.- 
+
+// bidden seas, and land on barbarous coasts. Not ignoring 
+바다와 야만적인 해안에 착륙합니다. 무시하지 마세요 
+
+// what is good, I am quick to perceive a horror, and could 
+좋은 점은 공포를 빠르게 감지하고 다음과 같은 일을 할 수 있다는 것입니다 
+
+// still be social with it would they let me since it is 
+여전히 사교적으로 지내면 그들은 저에게 허락할 것입니다 
+
+// but well to be on friendly terms with all the inmates of 
+하지만 모든 수감자들과 우호적인 관계를 유지하기 위해서는 
+
+// the place one lodges in. 
+숙소.
+
+// By reason of these things, then, the whaling voyage 
+이러한 이유들로 인해 포경 항해는 
+
+// was welcome ; the great flood-gates of the wonder-world 
+환영받았습니다; 경이로운 세계의 대홍수 gates 
+
+// swung open, and in the wild conceits that swayed me to 
+활짝 열렸고, 나를 흔들었던 거친 자만심 속에서 
+
+// my purpose, two and two there floated into my inmost 
+제 목적은, 거기서 두 개와 두 개가 제 가장 깊은 곳으로 떠올랐습니다 
+
+// soul, endless processions of the whale, and, midmost of 
+영혼, 끝없는 고래 행렬, 그리고 대부분의 
+
+// them all, one grand hooded phantom, like a snow hill in 
+그들 모두, 마치 눈 언덕처럼 웅장한 후드 팬텀 하나 
+
+// the air. 
+공기.

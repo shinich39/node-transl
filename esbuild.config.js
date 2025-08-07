@@ -14,7 +14,12 @@ const BROWSER_GLOBAL_NAME = "index";
 const ENTRY_POINT = `./src/${FILENAME}.ts`;
 
 // https://esbuild.github.io/api/#external
-const externalPackages = [];
+const externalPackages = [
+  "cheerio",
+  "puppeteer",
+  "puppeteer-extra",
+  "puppeteer-extra-plugin-stealth",
+];
 
 // https://esbuild.github.io/api/#packages
 const bundleExternalPackages = true;

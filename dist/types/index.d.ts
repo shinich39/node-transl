@@ -27,9 +27,9 @@ export declare function translate({ headless, cacheDir, type, text, from, to, si
      * @default 1024
      */
     maxDelay?: number;
-    onQueue?: (line: string, index: number, lines: string[]) => boolean;
-    onTranslate?: (oldValue: string, newValue: string | undefined, index: number) => string;
-    onError?: (value: string, index: number) => string;
+    onQueue?: (value: string, index: number, lines: string[]) => boolean;
+    onTranslate?: (oldValue: string, newValue: string | undefined, index: number, lines: string[]) => string;
+    onError?: (value: string, index: number, lines: string[]) => string;
 }): Promise<string>;
 export {};
 //# sourceMappingURL=index.d.ts.map

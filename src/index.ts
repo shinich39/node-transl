@@ -61,9 +61,9 @@ export async function translate(
      * @default 1024
      */
     maxDelay?: number,
-    onQueue?: (line: string, index: number, lines: string[]) => boolean,
-    onTranslate?: (oldValue: string, newValue: string|undefined, index: number) => string,
-    onError?: (value: string, index: number) => string,
+    onQueue?: (value: string, index: number, lines: string[]) => boolean,
+    onTranslate?: (oldValue: string, newValue: string|undefined, index: number, lines: string[]) => string,
+    onError?: (value: string, index: number, lines: string[]) => string,
   }
 ) {
   if (!size) {
@@ -190,7 +190,7 @@ export async function translate(
             const oldValue = q.value;
             const newValue = q.newValue;
             const isSkipped = q.isSkipped;
-            const formattedValue = onTranslate?.(oldValue, !isSkipped ? newValue : undefined, index) 
+            const formattedValue = onTranslate?.(oldValue, !isSkipped ? newValue : undefined, index, originalLines) 
               || newValue 
               || oldValue;
             q.newValue = formattedValue;
@@ -208,13 +208,13 @@ export async function translate(
               const newValue = q.newValue;
               const isSkipped = q.isSkipped;
               if (q.isSkipped) {
-                const formattedValue = onTranslate?.(oldValue, !isSkipped ? newValue : undefined, index) 
+                const formattedValue = onTranslate?.(oldValue, !isSkipped ? newValue : undefined, index, originalLines) 
                   || newValue 
                   || oldValue;
 
                 q.newValue = formattedValue;
               } else {
-                const formattedValue = onError?.(oldValue, index) || oldValue;
+                const formattedValue = onError?.(oldValue, index, originalLines) || oldValue;
 
                 q.newValue = formattedValue;
               }
