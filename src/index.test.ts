@@ -32,15 +32,16 @@ describe(path.basename(import.meta.filename), () => {
 
       t.onQueue = (line, index, lines) => {
         console.log(`onQueue()`, index, !!line.trim(), line);
-        return !!line.trim();
+        return !!line.trim(); // false => skip this line
       }
 
-      t.onTranslate = (oldValue, newValue, index) => {
-        console.log(`onTranslate()`, index, !!newValue, oldValue, newValue);
+      t.onTranslate = (oldValue, newValue, index, lines) => {
+        const isSkipped = typeof newValue === "undefined";
+        console.log(`onTranslate()`, index, !isSkipped, oldValue, newValue);
         return newValue || oldValue;
       }
 
-      t.onError = (value, index) => {
+      t.onError = (value, index, lines) => {
         console.log(`onError()`, value, index);
         return `ERROR: ${value}`;
       }

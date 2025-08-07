@@ -13026,10 +13026,9 @@ var Tranl = class {
         const content = await getContent(page, selector);
         const translatedLines = content.split(/\r\n|\r|\n/);
         for (let k = 0; k < translatedLines.length; k++) {
-          const pq = processQueue[k];
-          const oldValue = pq.value;
+          const q = processQueue[k];
           const newValue = translatedLines[k];
-          pq.newValue = newValue;
+          q.newValue = newValue;
         }
         while (j <= processQueueLastIndex) {
           const q = queue[j];
@@ -13046,10 +13045,9 @@ var Tranl = class {
           const q = queue[j];
           const index = q.index;
           const oldValue = q.value;
-          const newValue = q.newValue;
           const isSkipped = q.isSkipped;
-          if (q.isSkipped) {
-            const formattedValue = this.onTranslate?.(oldValue, !isSkipped ? newValue : void 0, index, originalLines) || newValue || oldValue;
+          if (isSkipped) {
+            const formattedValue = this.onTranslate?.(oldValue, void 0, index, originalLines) || oldValue;
             q.newValue = formattedValue;
           } else {
             const formattedValue = this.onError?.(oldValue, index, originalLines) || oldValue;
