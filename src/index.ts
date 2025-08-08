@@ -6,7 +6,7 @@ import { reverso } from "./models/reverso.js";
 import { yandex } from "./models/yandex.js";
 import { getContent, waitContent } from "./libs/web.js";
 import { IQueue } from "./types/queue.js";
-import { generateInt, wait } from "./libs/utils.js";
+import { generateInt, retry, wait } from "./libs/utils.js";
 
 import puppeteerExtra from "puppeteer-extra";
 import StealthPlugin from 'puppeteer-extra-plugin-stealth';
@@ -177,7 +177,9 @@ export class Tranl {
           timeout: 1000 * 30, // 30s
         });
 
-        await waitContent(page, selector, 10);
+        const wrappedWaitContent = retry(waitContent, 10, 1024);
+        
+        await wrappedWaitContent(page, selector);
 
         const content = await getContent(page, selector);
 

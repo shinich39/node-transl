@@ -1,39 +1,24 @@
-'use strict';
-
 import * as cheerio from 'cheerio';
 import { Browser, Page } from 'puppeteer';
 import { wait } from './utils.js';
 
-export async function waitContent(page: Page, selector: string, retry = 3) {
-  while (true) {
-    if (retry < 0) {
-      throw new Error("Failed to load");
-    }
-
-    try {
-      const element = await page.$(selector);
-      if (!element) {
-        throw new Error("Element not found");
-      }
-
-      const content = await page.evaluate((elem) => elem?.textContent, element);
-      if (!content) {
-        throw new Error("Element is empty");
-      }
-
-      const trimmedContent = content.trim();
-      if (trimmedContent === '' || trimmedContent === "...") {
-        throw new Error("Element is empty");
-      }
-
-      return content;
-    } catch(err) {
-      console.error(err);
-      await wait(1024);
-    }
-
-    retry--;
+export async function waitContent(page: Page, selector: string) {
+  const element = await page.$(selector);
+  if (!element) {
+    throw new Error("Element not found");
   }
+
+  const content = await page.evaluate((elem) => elem?.textContent, element);
+  if (!content) {
+    throw new Error("Element is empty");
+  }
+
+  const trimmedContent = content.trim();
+  if (trimmedContent === '' || trimmedContent === "...") {
+    throw new Error("Element is empty");
+  }
+
+  return content;
 }
 
 export async function getContent(page: Page, selector: string) {
